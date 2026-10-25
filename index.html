@@ -675,7 +675,7 @@
       .about-grid, .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
       section { padding: 4rem 1.25rem; }
     }
-  </style>
+  .portfolio-projects{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}.portfolio-project{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.6rem;display:flex;flex-direction:column;gap:.8rem}.portfolio-project h3{font:700 1.25rem var(--font-display)}.portfolio-project p{color:var(--text-muted);font-size:.94rem}.portfolio-project small,.portfolio-project a{color:var(--neon-cyan)}.portfolio-project a{margin-top:auto;font-weight:600}.portfolio-status{font:500 .72rem var(--font-mono);color:#2acda5}.portfolio-status.pending{color:var(--text-muted)}@media(max-width:720px){.portfolio-projects{grid-template-columns:1fr}}</style>
 </head>
 <body>
 
@@ -864,14 +864,11 @@
       <h2 class="section-title" data-i18n="proj.title">My <em>Work</em></h2>
       <div class="section-sep"></div>
     </div>
-    <div class="projects-coming reveal">
-      <div class="coming-border">
-        <div class="coming-icon">🚀</div>
-        <div class="coming-title" data-i18n="proj.comingTitle">Building something great...</div>
-        <p class="coming-sub" data-i18n="proj.comingSub">
-          I'm currently working on my projects — they'll be showcased here very soon. Stay tuned!
-        </p>
-      </div>
+    <div class="portfolio-projects reveal">
+      <article class="portfolio-project"><span class="portfolio-status" data-i18n="proj.verified">Core workflow verified</span><h3 data-i18n="proj.vac.title">Vacation Request Management</h3><p data-i18n="proj.vac.desc">Python console application; employee lookup, leave-balance validation and Excel persistence. Main approval workflow tested.</p><small>Python · pandas · Excel</small><a href="https://github.com/Bramart96/gestion-solicitudes-vacaciones" target="_blank" rel="noopener noreferrer" data-i18n="proj.view">View repository ↗</a></article>
+      <article class="portfolio-project"><span class="portfolio-status pending" data-i18n="proj.pending">Tests pending</span><h3 data-i18n="proj.countries.title">Country Data Management</h3><p data-i18n="proj.countries.desc">Modular Python application for searching, filtering and analyzing country records in CSV.</p><small>Python · CSV</small><a href="https://github.com/Bramart96/gestion-datos-paises" target="_blank" rel="noopener noreferrer" data-i18n="proj.view">View repository ↗</a></article>
+      <article class="portfolio-project"><span class="portfolio-status pending" data-i18n="proj.pending">Tests pending</span><h3 data-i18n="proj.sales.title">Sales Analysis with Python</h3><p data-i18n="proj.sales.desc">Sales metrics and daily trends with pandas and Matplotlib.</p><small>Python · pandas · Matplotlib</small><a href="https://github.com/Bramart96/analisis-ventas-python" target="_blank" rel="noopener noreferrer" data-i18n="proj.view">View repository ↗</a></article>
+      <article class="portfolio-project"><span class="portfolio-status pending" data-i18n="proj.pending">Tests pending</span><h3 data-i18n="proj.dev.title">Developer Services Platform</h3><p data-i18n="proj.dev.desc">React/Next.js frontend and Node.js/Express backend; integration still pending verification.</p><small>React · Next.js · Express</small><a href="https://github.com/Bramart96/plataforma-servicios-dev" target="_blank" rel="noopener noreferrer" data-i18n="proj.view">View repository ↗</a></article>
     </div>
   </div>
 </section>
@@ -976,6 +973,28 @@
       "stack.title": "Tools I Use",
       "proj.label": "// projects",
       "proj.title": "My Work",
+      "proj.verified": "Core workflow verified",
+      "proj.pending": "Tests pending",
+      "proj.view": "View repository ↗",
+      "proj.vac.title": "Vacation Request Management",
+      "proj.vac.desc": "Python console application; employee lookup, leave-balance validation and Excel persistence. Main approval workflow tested.",
+      "proj.countries.title": "Country Data Management",
+      "proj.countries.desc": "Modular Python application for searching, filtering and analyzing country records in CSV.",
+      "proj.sales.title": "Sales Analysis with Python",
+      "proj.sales.desc": "Sales metrics and daily trends with pandas and Matplotlib.",
+      "proj.dev.title": "Developer Services Platform",
+      "proj.dev.desc": "React/Next.js frontend and Node.js/Express backend; integration still pending verification.",
+      "proj.verified": "Flujo principal verificado",
+      "proj.pending": "Pruebas pendientes",
+      "proj.view": "Ver repositorio ↗",
+      "proj.vac.title": "Gestión de solicitudes de vacaciones",
+      "proj.vac.desc": "Aplicación Python: consulta de empleados, validación de saldo y persistencia en Excel. Flujo principal probado.",
+      "proj.countries.title": "Gestión de datos de países",
+      "proj.countries.desc": "Aplicación modular en Python para buscar, filtrar y analizar datos de países en CSV.",
+      "proj.sales.title": "Análisis de ventas con Python",
+      "proj.sales.desc": "Métricas de ventas y evolución diaria con pandas y Matplotlib.",
+      "proj.dev.title": "Plataforma de servicios para desarrolladores",
+      "proj.dev.desc": "Frontend React/Next.js y backend Node.js/Express; integración pendiente de verificación.",
       "proj.comingTitle": "Building something great...",
       "proj.comingSub": "I'm currently working on my projects — they'll be showcased here very soon. Stay tuned!",
       "contact.label": "// contact",
